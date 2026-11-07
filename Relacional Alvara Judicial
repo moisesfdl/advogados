@@ -1,0 +1,132 @@
+const Sequelize = require("sequelize");
+const Connect = require('../DataBase/database');
+
+const AlvaraJudicial = Connect.define('TermoAlvaJudicial', {
+    Direito_Dever_Exercido:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Circulante_Ativo:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Renda_Financeira:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Empreendedor:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Moradia:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Uso_Conta_Bancaria:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Ir_Vir:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Gosar_Vida:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Cidadania_Reconhecida:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+    Direito_Mora_Credito:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            },
+  Direito_Inquilinato:{
+           type: Sequelize.SMALLINT,
+            allowNull: false
+           },isSlug:{
+           type: Sequelize.SMALLINT,
+           allowNull: false     
+          },bodyParser:{
+          type: Sequelize.SMALLINT,
+          allowNull: false
+          },
+    SalveGuarda:{
+             type: Sequelize.SMALLINT,
+              allowNull: false
+             },isSlug:{
+             type: Sequelize.SMALLINT,
+             allowNull: false     
+            },bodyParser:{
+            type: Sequelize.SMALLINT,
+            allowNull: false
+            }  
+})
+
+AlvaraJudicial.belongsTo();
+AlvaraJudicial.hasMay();
+
+AlvaraJudicial.sync({force: true});
+
+module.exports = AlvaraJudicial
