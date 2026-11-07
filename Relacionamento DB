@@ -1,0 +1,81 @@
+const Sequelize = require("sequelize");
+const Connect = require("../DataBase/database");
+
+const AltosProcessTransit = Connect.define('Advogado', {
+    AlvaraJudicial:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    RevogarTransitoSubjulgado:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    OrnamentarRegular:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    OrquestrarRegular:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    PrevTransito:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    PromovOstentar:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        },
+    SalveGuard:{
+         type: Sequelize.SMALLINT,
+          allowNull: false
+         },isSlug:{
+         type: Sequelize.SMALLINT,
+         allowNull: false     
+        },bodyParser:{
+        type: Sequelize.SMALLINT,
+        allowNull: false
+        }
+})
+
+AltosProcessTransit.belongsTo();
+
+AltosProcessTransit.sync({force: true});
+
+module.exports = AltosProcessTransit;
