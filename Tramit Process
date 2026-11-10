@@ -1,0 +1,199 @@
+const Sequelize = require("sequelize");
+const Connect = require("../DataBase/database");
+
+const TramitProcess = Connect.define('Cartorios', {
+    Aditamento:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    ContratoSocial:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    Socio:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    IniciativaPrivada:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    AlvaraJudicial:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+        Permissoes:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        LiminarJudicial:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        Decreto:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        CirculanteAtivos:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        FonteRiquiza:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        PosiçaoNobreza:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        TituloNobreza:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        Arrendamento:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+        Subjulgado:{
+                     type: Sequelize.SMALLINT,
+                      allowNull: false
+                     },isSlug:{
+                     type: Sequelize.SMALLINT,
+                     allowNull: false     
+                    },bodyParser:{
+                    type: Sequelize.SMALLINT,
+                    allowNull: false
+                    },
+    Tomador:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    Fomento:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    Ordinarios:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    Oriundos:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                },
+    Pactos:{
+                 type: Sequelize.SMALLINT,
+                  allowNull: false
+                 },isSlug:{
+                 type: Sequelize.SMALLINT,
+                 allowNull: false     
+                },bodyParser:{
+                type: Sequelize.SMALLINT,
+                allowNull: false
+                }
+})
+
+TramitProcess.sync({force: false});
+
+module.exports = TramitProcess;
